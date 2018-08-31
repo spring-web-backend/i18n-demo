@@ -48,7 +48,7 @@ public class AppConfig extends WebMvcConfigurerAdapter implements ApplicationCon
     public TemplateEngine templateEngine() {
         TemplateEngine templateEngine = new SpringTemplateEngine();
         templateEngine.setTemplateResolver(templateResolver());
-        return templateEngine();
+        return templateEngine;
     }
 
     @Bean
